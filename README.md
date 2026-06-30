@@ -1,20 +1,20 @@
-# 🖌️ Paint GUI App
+# Paint GUI App
 
-A beautiful and interactive paint application built using Python's Tkinter. Features smooth drawing, slider-controlled brush size, and a vibrant color picker — all wrapped in an aesthetic dark UI. 🎨🖤
-
----
-
-## 🚀 Features
-
-- 🎚️ Slider-controlled brush size
-- 🎨 Live color picker with real-time preview
-- 🖱️ Smooth mouse-drag drawing
-- 🔴 One-click Clear Canvas
-- 🌙 Dark mode + Emoji-enhanced interface
+An interactive paint application built using Python's Tkinter. Features smooth drawing, slider-controlled brush size, and a vibrant color picker — all wrapped in an aesthetic dark UI.
 
 ---
 
-## 📦 How to Run
+## Features
+
+- Slider-controlled brush size
+- Live color picker with real-time preview
+- Smooth mouse-drag drawing
+- One-click Clear Canvas
+- Dark mode + Emoji-enhanced interface
+
+---
+
+## How to Run
 
 1. Clone this repo:
 
@@ -31,7 +31,7 @@ A beautiful and interactive paint application built using Python's Tkinter. Feat
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```bash
 paint-gui-prince/
@@ -41,13 +41,13 @@ paint-gui-prince/
 
 ---
 
-## 🧰 Tech Used
+## Tech Used
 
-- 🐍 Python 3.10+
-- 🖼️ Tkinter (Standard GUI Library)
-- 💎 Emojis for enhanced UI
-- 🚫 No external dependencies
+- Python 3.10+
+- Tkinter (Standard GUI Library)
+- Emojis for enhanced UI
+- No external dependencies
 
 ---
 
-## 💙 Made with love by [Prince Pathak](https://github.com/princepathak25)
+## Made by [Prince Pathak]
