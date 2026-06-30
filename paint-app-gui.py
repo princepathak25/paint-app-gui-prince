@@ -1,9 +1,8 @@
-# 🎨 Prince's Beautiful Paint App using Tkinter
-# Create, doodle, and express yourself! ✨
+# Paint App using Tkinter
+# Create, doodle, and express yourself!
 import tkinter as tk
 from tkinter import colorchooser
 
-# 🎯 Global color and brush size
 current_color = "black"
 
 def set_color(new_color):
@@ -26,22 +25,22 @@ def choose_custom_color():
     if color:
         set_color(color)
 
-# 🪟 Setup window
+# Setup window
 root = tk.Tk()
 root.title("🎨 Prince's Paint App")
 root.geometry("850x600")
 root.config(bg="#1e1e1e")
 
-# 🖼️ Canvas
+# Canvas
 canvas = tk.Canvas(root, bg="white", width=820, height=460, bd=3, relief="sunken")
 canvas.pack(padx=15, pady=10)
 canvas.bind("<B1-Motion>", paint)
 
-# 🎛️ Controls frame
+# Controls frame
 controls = tk.Frame(root, bg="#1e1e1e")
 controls.pack(pady=10)
 
-# 🎨 Preset colors
+# Preset colors
 colors = ["black", "red", "blue", "green", "orange", "purple"]
 for col in colors:
     tk.Button(
@@ -49,12 +48,12 @@ for col in colors:
         command=lambda c=col: set_color(c)
     ).pack(side="left", padx=5)
 
-# 🌈 Custom color
+# Custom color
 tk.Button(
     controls, text="🎨 Pick Color", fg="white", bg="#444", command=choose_custom_color
 ).pack(side="left", padx=10)
 
-# ✏️ Brush size
+# Brush size
 tk.Label(controls, text="✏️ Size:", bg="#1e1e1e", fg="white", font=("Segoe UI", 10)).pack(side="left", padx=5)
 
 size_slider = tk.Scale(
@@ -65,7 +64,7 @@ size_slider = tk.Scale(
 size_slider.set(5)
 size_slider.pack(side="left", padx=5)
 
-# 🧽 Clear button
+# Clear button
 tk.Button(
     controls, text="🧼 Clear", fg="white", bg="#ff4c4c",
     font=("Segoe UI", 10, "bold"), command=clear_canvas
